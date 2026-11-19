@@ -1,0 +1,7 @@
+id,left,right,scope,state,received,supersedes
+I1,A3,A9,person,possible,07:52,
+I2,A9,A13,person,possible,07:55,
+I3,A3,A9,person,confirmed,09:08,I1
+I4,A9,A13,person,refuted,09:08,I2
+I5,A1,A14,household,possible,07:55,
+I6,A1,A14,household,refuted,09:12,I5
