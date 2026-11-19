@@ -1,0 +1,6 @@
+profile,topic,window,card,rank,requested
+old,证明,北,C,1,2026-05-01
+old,证明,南,C,1,2026-05-01
+candidate,证明,北,D,1,2026-05-01
+candidate,证明,南,D,1,2026-05-01
+fallback,证明,南,F,1,2026-05-09
