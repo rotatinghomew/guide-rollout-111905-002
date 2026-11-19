@@ -13,4 +13,5 @@ N11,N6,S4,A11,public,declined,08:38,
 N12,,S3,A13,public,sent,08:45,09:30
 N13,N4,S2,A7;A8,priority,declined,09:14,
 N14,N3,S2,A9,public,adjudicate_drop,09:24,
-N15,N4,S2,A7;A8,priority,accepted,09:25,
+N15,,S2,A6,public,sent,09:25,10:00
+N16,N15,S2,A6,public,accepted,09:40,
