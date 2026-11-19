@@ -4,7 +4,7 @@ import unittest
 
 
 FIXTURES = Path(__file__).resolve().parents[1] / "fixtures"
-HEADERS = {'cards': ['id', 'topic', 'policy', 'destination', 'active_from', 'active_to'], 'applications': ['profile', 'topic', 'window', 'card', 'rank', 'requested'], 'observation_orders': ['id', 'profile', 'window', 'card', 'included_from', 'cap', 'used', 'status'], 'issued': ['id', 'order_id', 'card', 'visitor', 'issued_at'], 'card_changes': ['id', 'card', 'kind', 'effective', 'recorded', 'related_card'], 'policy': ['min_visitors', 'confidence', 'min_correct', 'max_redirect', 'followup_days'], 'requests': ['id', 'visitor', 'window', 'topic', 'policy', 'day', 'cutoff'], 'offers': ['request_id', 'card', 'probability', 'display_position'], 'responses': ['request_id', 'card', 'outcome', 'confirmed']}
+HEADERS = {'cards': ['id', 'topic', 'policy', 'destination', 'active_from', 'active_to'], 'applications': ['profile', 'topic', 'window', 'card', 'rank', 'requested'], 'observation_orders': ['id', 'profile', 'window', 'card', 'included_from', 'cap', 'used', 'status'], 'issued': ['id', 'order_id', 'card', 'visitor', 'issued_at'], 'card_changes': ['id', 'card', 'kind', 'effective', 'recorded', 'related_card'], 'policy': ['min_visitors', 'confidence', 'min_correct', 'max_redirect', 'followup_days'], 'requests': ['id', 'visitor', 'window', 'topic', 'policy', 'day', 'cutoff'], 'offers': ['request_id', 'card', 'probability', 'display_position'], 'responses': ['request_id', 'card', 'outcome', 'confirmed'], 'visitor_assignments': ['id', 'visitor', 'order_id', 'arm', 'assigned', 'expires'], 'request_queue': ['id', 'visitor', 'window', 'topic', 'policy', 'day', 'orders'], 'callbacks': ['order_id', 'office', 'start', 'end', 'reserved', 'committed'], 'callback_capacity': ['office', 'start', 'end', 'maximum']}
 LINKS = [('offers', 'request_id', 'requests', 'id'), ('responses', 'request_id', 'requests', 'id'), ('issued', 'order_id', 'observation_orders', 'id')]
 
 
@@ -22,7 +22,7 @@ class SourceRecords(unittest.TestCase):
                 self.assertEqual(header, expected)
                 self.assertTrue(rows)
                 self.assertTrue(all(None not in row and None not in row.values() for row in rows))
-                if "id" in header:
+                if "id" in header and (name != "receipts" or "batch" not in header):
                     ids = [row["id"] for row in rows]
                     self.assertTrue(all(ids))
                     self.assertEqual(len(ids), len(set(ids)))

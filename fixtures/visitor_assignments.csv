@@ -1,0 +1,4 @@
+id,visitor,order_id,arm,assigned,expires
+A1,V701,O1,candidate,2026-05-02,2026-05-14
+A2,V702,O1,candidate,2026-05-03,2026-05-14
+A3,V703,O1,control,2026-05-03,2026-05-14
