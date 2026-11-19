@@ -1,0 +1,11 @@
+record_id,record_type,version,valid_from,valid_to,category,parent_category,case_id,source_category,reviewed_category,assigned_unit,description
+r001,taxonomy,v1,2025-01-01,2026-03-01,heat,, ,,,,
+r002,taxonomy,v1,2025-01-01,2026-03-01,building,, ,,,,
+r003,taxonomy,v2,2026-03-01,,home-comfort,, ,,,,
+r004,taxonomy,v2,2026-03-01,,public-equipment,, ,,,,
+r005,taxonomy-map,v2,2026-03-01,,home-comfort,heat,,,,,
+r006,taxonomy-map,v2,2026-03-01,,home-comfort,building,,,,,
+r007,case,,,,,,c201,heat,,heat-team,楼道暖气阀门无法调节
+r008,case,,,,,,c202,building,public-equipment,facility-team,楼院照明设备间歇失灵
+r009,case,,,,,,c203,heat,building-team,楼道墙面潮湿且供热不足
+r010,case,,,,,,c204,building,,facility-team,公共健身器材地脚松动
