@@ -1,0 +1,6 @@
+delivery,receipt,appointment,decision,occurred,received
+D1,T1,C17,accepted,2026-05-05,2026-05-05
+D2,T2,C18,rejected,2026-05-06,2026-05-09
+D3,T3,C19,accepted,2026-05-11,2026-05-12
+D4,T3,C19,accepted,2026-05-11,2026-05-13
+D5,T4,C17,cancel_confirmed,2026-05-12,2026-05-14
