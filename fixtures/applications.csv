@@ -1,6 +1,4 @@
-profile,topic,window,card,rank,requested
-old,证明,北,C,1,2026-05-01
-old,证明,南,C,1,2026-05-01
-candidate,证明,北,D,1,2026-05-01
-candidate,证明,南,D,1,2026-05-01
-fallback,证明,南,F,1,2026-05-09
+id,household,person,choices,group_size,evidence
+A1,H1,P1,S1|S2,2,E1
+A2,H1,P2,S1|S2,2,E1
+A3,H2,P3,S1,1,E2

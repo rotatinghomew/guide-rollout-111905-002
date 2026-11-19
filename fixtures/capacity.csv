@@ -1,0 +1,3 @@
+session,capacity,protected,release_at,rule_version
+S1,2,1,09:00,V1
+S2,2,0,,V1
